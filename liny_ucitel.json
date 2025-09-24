@@ -1,0 +1,58 @@
+{
+    "adam": {
+        "znamky": [
+            2,
+            4,
+            1
+        ],
+        "prumer": 2.33
+    },
+    "sam": {
+        "znamky": [
+            1,
+            1
+        ],
+        "prumer": 1.0
+    },
+    "jan": {
+        "znamky": [
+            5,
+            2,
+            3,
+            5,
+            1,
+            3,
+            1,
+            5,
+            2,
+            4
+        ],
+        "prumer": 3.1
+    },
+    "pepa": {
+        "znamky": [
+            1
+        ],
+        "prumer": 1.0
+    },
+    "alois": {
+        "znamky": [
+            3
+        ],
+        "prumer": 3.0
+    },
+    "vojta": {
+        "znamky": [
+            1,
+            1
+        ],
+        "prumer": 1.0
+    },
+    "igor": {
+        "znamky": [
+            5,
+            4
+        ],
+        "prumer": 4.5
+    }
+}

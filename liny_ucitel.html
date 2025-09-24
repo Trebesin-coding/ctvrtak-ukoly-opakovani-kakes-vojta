@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .ohodnoceni {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Jak se jmenuješ?</div>
+    <input class="input" type="text">
+    <button class="tlacitko">Odeslat</button>
+    <h1 class="output"></h1>
+    <div class="ohodnoceni"></div>
+
+    <script>
+        let input = document.querySelector(".input");
+        let output = document.querySelector(".output");
+        let tlacitko = document.querySelector(".tlacitko");
+        let ohodnoceni = document.querySelector(".ohodnoceni");
+
+        function ZcelaNahdoneHodnoceni() {
+            let jmeno = input.value;
+            let randomCislo = Math.floor(Math.random() * 5) + 1;
+
+            let text = jmeno + " dostal známku " + randomCislo;
+            output.innerText = text;
+
+            switch (randomCislo) {
+                case 1:
+                    document.body.style.background = "yellow";
+                    ohodnoceni.innerText = "Ty jseš tak inteligentnííí 🤯🤯🤯";
+                    break;
+                case 2:
+                    document.body.style.background = "lightgreen";
+                    ohodnoceni.innerText = "Hezkyy 😎😎😎";
+                    break;
+                case 3:
+                    document.body.style.background = "green";
+                    ohodnoceni.innerText = "Sometimes maybe good, sometimes maybe shit 😑😑😑";
+                    break;
+                case 4:
+                    document.body.style.background = "cyan";
+                    ohodnoceni.innerText = "Nic moc 👎👎👎";
+                    break;
+                case 5:
+                    document.body.style.background = "red";
+                    ohodnoceni.innerText = "I Souhrada by to napsal líp 🤦‍♂️🤦‍♂️🤦‍♂️";
+                    break;
+            }
+        }
+
+        tlacitko.addEventListener("click", ZcelaNahdoneHodnoceni);
+    </script>
+</body>
+</html>
