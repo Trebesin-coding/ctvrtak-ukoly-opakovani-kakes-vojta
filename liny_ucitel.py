@@ -25,13 +25,15 @@ if jmeno in bakalari:
         nadrzovani = int(input(f"Můj hvězdnej student. Jakou chceš známku?"))
         data[jmeno]["znamky"].append(nadrzovani)
     else:
+        print(f"Dostal jsi {znamka}")
         data[jmeno]["znamky"].append(znamka)
     prumer = sum(data[jmeno]["znamky"]) / len(data[jmeno]["znamky"])
     data[jmeno]["prumer"] = round(prumer, 2)
 if prumer >= 3:
     print(f"{jmeno} by se měl začít učit 😭😭😭")
 
-print(bakalari)
+for jmeno in bakalari:
+    print(jmeno, bakalari[jmeno])
 
 with open("liny_ucitel.json", "w") as file:
     json.dump(bakalari, file, indent = 4)
