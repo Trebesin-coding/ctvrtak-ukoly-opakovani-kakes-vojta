@@ -3,7 +3,7 @@ import sys
 import json
 
 znamka = random.randint(1, 5)
-jmeno = input(f"Jak se jmenuješ {znamka}?: ")
+jmeno = input(f"Jak se jmenuješ?: ")
 with open("liny_ucitel.json", "r") as file:
     data = json.load(file)
 bakalari = data

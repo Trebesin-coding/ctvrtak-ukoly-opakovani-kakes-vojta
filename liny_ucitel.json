@@ -31,9 +31,10 @@
     },
     "pepa": {
         "znamky": [
-            1
+            1,
+            3
         ],
-        "prumer": 1.0
+        "prumer": 2.0
     },
     "alois": {
         "znamky": [
@@ -43,6 +44,7 @@
     },
     "vojta": {
         "znamky": [
+            1,
             1,
             1
         ],
